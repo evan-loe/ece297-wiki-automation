@@ -1,0 +1,37 @@
+.newTaskContainer {
+  width: auto;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.newTaskContainer > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10px;
+  height: auto;
+}
+
+.inputContainer > label {
+  font-size: 1.5rem;
+}
+
+.inputContainer > textarea {
+  margin: 10px 0px;
+  height: 100px;
+}
+
+.descriptionContainer {
+  width: 100%;
+}

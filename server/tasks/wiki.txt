@@ -1,0 +1,216 @@
+======Welcome to Team 56's Wiki!======
+==== The Whiteboard ====
+> Motivational quotes, cute cats, or just anything you want to say!
+==I'm not afraid to die on a treadmill. -- Will Smith==
+{{:cd056:tuqa-nabi-uhnzzuatios-unsplash.jpg?direct&100|}}
+
+==== Quick Links ====
+[[https://q.utoronto.ca/courses/252402/files/18389892?module_item_id=3271841|Syllabus]] \\
+[[https://q.utoronto.ca/courses/252402/assignments/803050?module_item_id=3413225|Milestone 1]] \\
+[[https://q.utoronto.ca/courses/252402/pages/quick-start-guides?module_item_id=3322371|Quick start guides (unit test, wiki, and vnc guides, etc)]] \\
+[[teamcharter|Team 56 Charter]]\\
+[[https://docs.google.com/document/d/1VAnKVQKalz1IZHipUNqRLjvr-lfSPPmCzn1LKCddjwY/edit?usp=sharing|M1: Data Structures Design Document]]
+
+====Stack Overflow - Team 56 edition====
+Anything you need help with or anything you want to say related to the project! \\
+-------------------------------------------------------------------------------- \\
+Pre-loaded data structures complete. Needs other sections to implement new data structures and testing - Feb 1 | Jay
+
+Lots of testing needed, waiting for other sections to be finished before running unit tests - Jan 29 | Evan
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+======Week of Jan 24 - Tasks======
+
+^ To Do ^ Name ^ Status ^ Done ^ Due Date ^ Comments ^
+| [[start#Read Milestone 1|Read Milestone 1]] | Jay | Reading | :DONE: | Thursday Jan 27 | |
+| [[start#Read Milestone 1|Read Milestone 1]] | Jin | Done | :DONE: | Thursday Jan 27 | |
+| [[start#Read Milestone 1|Read Milestone 1]] | Evan | Done | :DONE: | Thursday Jan 27 | |
+| [[start#Create wiki template|Create wiki template]] | Evan | Done | :DONE: | Wed Feb 2 | |
+| [[start#Create design doc template|Create design doc template]] | Jay | Done | :DONE: | Wed Feb 2 | |
+| [[start#Function: Load Map|Function: Load Map]] | Jay | Done, needs testing | :DRAFT: | Wed Feb 2 | |
+| [[start#Function: Close Map|Function: Close Map]] | Jay | Done, needs testing | :DRAFT: | Wed Feb 2 | |
+| [[start#Function: Find Distance Between Two Points|Function: Find Distance Between Two Points]] | Jin |  Done, needs testing | :DRAFT: | Wed Feb 2 | |
+| [[start#Function: Find Street Segment Length|Function: Find Street Segment Length]] | Jin |  | :WIP: | Wed Feb 2 | |
+| [[start#Function: Find Street Segment Travel Time|Function: Find Street Segment Travel Time]] | Jay | WIP | :WIP: | Wed Feb 2 | |
+| [[start#Function: Determine if Intersections are Directly Connected|Function: Determine if Intersections are Directly Connected]] | Evan | Done, needs testing | :DRAFT: | Wed Feb 2 | |
+| [[start#Function: Find Closest Intersection|Function: Find Closest Intersection]] | Evan | Done, needs testing | :DRAFT: | Wed Feb 2 | |
+| [[start#Function: Find Street Segments of Intersection|Function: Find Street Segments of Intersection]] | Evan | Done, needs testing | :DRAFT: | Wed Feb 2 | |
+| [[start#Function: Find Intersections of Street|Function: Find Intersections of Street]] | Jin |  | :WIP: | Wed Feb 2 | |
+| [[start#Function: Find Intersection of Two Streets|Function: Find Intersection of Two Streets]] | Evan | Done, needs testing | :DRAFT: | Wed Feb 2 | |
+| [[start#Function: Find Street Ids from Partial Street Name|Function: Find Street Ids from Partial Street Name]] | Jay | WIP | :WIP: | Wed Feb 2 | |
+| [[start#Function: Find Street Length|Function: Find Street Length]] | Jin |  | :WIP: | Wed Feb 2 | |
+| [[start#Function: Find Closest Point of Interest|Function: Find Closest Point of Interest]] | Jay | WIP | :WIP: | Wed Feb 2 | |
+| [[start#Function: Find Feature Area|Function: Find Feature Area]] | Jin |  | :WIP: | Wed Feb 2 | |
+| [[start#Function: Find Latitude and Longitude OSM Node|Function: Find Latitude and Longitude OSM Node]] | Evan | Done, needs testing | :DRAFT: | Wed Feb 2 | |
+| [[start#Write Team Charter|Write Team Charter]] | Evan | In Progress | :DRAFT: | Wed Feb 2 | |
+| [[start#Write Team Charter|Write Team Charter]] | Jay | In Progress | :DRAFT: | Wed Feb 2 | |
+| [[start#Write Team Charter|Write Team Charter]] | Jin | In Progress | :DRAFT: | Wed Feb 2 | |
+
+
+====Task Descriptions====
+===Read Milestone 1===
+> Read through the milestone 1 document (22 pages)
+>
+>**Notes**
+>  - To get an idea of what milestone 1 requires us to to
+
+===Create wiki template===
+> Create a template for the wiki and also add all tasks for week of Jan 24
+>
+>**Notes**
+>  - also try to make it look pretty
+
+===Function: Load Map===
+> Loads a map from streets.bin 
+> Should also cache important data for performance optimization
+> Speed req: moderate
+>
+>**Notes**
+>  - Returns true if successful and false if not
+
+
+===Function: Close Map===
+> Deallocate any memory allocated with new and any other cleanup needed
+> Speed req: moderate
+>
+>**Notes**
+>  - Use valgrind to check for any memory leaks
+
+
+===Function: Find Distance between Two Points===
+> Returns the distance between two (lat, long) coordinates in meters
+> Speed req: medium
+>
+>**Notes**
+>  - There is a formula described in milestone 1 handout
+
+===Function: Find Street Segment Length===
+>  Returns the length of the given street segment in meters
+>  Speed req: moderate
+>
+>**Notes**
+>  
+
+===Function: Find Street Segment Travel Time===
+>  Returns the travel time to drive from one end of a street segment
+>  to the other, in seconds, when driving at the speed limit
+> Speed req: high
+>
+>**Notes**
+>  - time = distance/speed_limit
+
+===Function: Determine if Intersections are Directly Connected===
+>  Returns true if the two intersections are directly connected, meaning you can legally
+>  drive from the first intersection to the second using only one streetSegment.
+>  Speed req: moderate
+>
+>**Notes**
+>  - Need to determine if one way street, etc and also should only be connected through one street segment (not multiple)
+
+
+===Function: Find Closest Intersection===
+>  Returns the geographically nearest intersection (i.e. as the crow flies) to the given position
+>  Speed req: none
+>
+>**Notes**
+>  - no notes
+
+===Function: Find Street Segments of Intersection===
+>  Returns the street segments that connect to the given intersection
+>  Speed req: high
+>
+>**Notes**
+>  - no notes
+
+===Function: Find Interactions of Street===
+> Returns the street names at the given intersection 
+> Speed req: high
+>
+>**Notes**
+>  - includes duplicate street names in the returned vector
+
+===Function: Find Intersections of Street===
+> Returns all intersections along the a given street.
+> There should be no duplicate intersections in the returned vector.
+> Speed req: high
+>
+>**Notes**
+>  - example done in lecture, will need some kind of caching done in load map function
+
+===Function: Find Intersection of Two Streets===
+> Return all intersection ids at which the two given streets intersect
+> Speed req: high
+>
+>**Notes**
+>  - This function will typically return one intersection id for streets
+>  - that intersect and a length 0 vector for streets that do not. For unusual
+>  - curved streets it is possible to have more than one intersection at which
+>  - two streets cross
+>  - There should be no duplicate intersections in the returned vector.
+
+===Function: Find Street Ids from Partial Street Name===
+> Returns all street ids corresponding to street names that start with the given prefix
+> The function should be case-insensitive to the street prefix
+> The function should ignore spaces
+> For example, both "bloor " and "BloOrst" are prefixes to "Bloor Street East".
+> If no street names match the given prefix, this routine returns an empty (length 0) vector.
+> You can choose what to return if the street prefix passed in is an empty
+> (length 0) string, but your program must not crash if street_prefix is a length 0 string.
+> Speed req: high
+>
+>**Notes**
+>  - no notes
+
+===Function: Find Street Length===
+> Returns the length of a given street in meters
+>
+>**Notes**
+>  - Do we need to take into account the length of curves?
+
+===Function: Find Closest Point of Interest===
+>  Returns the nearest point of interest of the given type to the given position
+>  Speed req: none
+>
+>**Notes**
+>  - no notes
+
+===Function: Find Feature Area===
+> Assume a non self-intersecting polygon (i.e. no holes)
+> Return 0 if this feature is not a closed polygon.
+> Speed req: moderate
+>
+>**Notes**
+>  - Should refer to lecture for polygon area formula
+>  - Features are ponds, parks, beaches, lakes, islands, buildings, etc
+
+===Function: Find Latitude and Longitude OSM Node===
+> Return the LatLon of an OSM node; will only be called with OSM nodes (not ways or relations)
+> Speed req: high
+>
+>**Notes**
+>  - probably need to use the other lower level api for this
+
+===Write Team Charter===
+> Determine how to run the team. What type of leadership do you want on the team. How will your team make decisions? How will you make yourselves accountable? etc...
+> Speed req: N/A
+>
+>**Notes**
+> No notes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+======Weekly Task Template======
+<nowiki>
+======Week of [date of week monday] - Tasks======
+
+^ To Do ^ Name ^ Status ^ Done ^ Comments ^
+| \[[start#Task Name|Task Name]] | Member | Status| :WIP: | |
+| \[[start#Task Name|Task Name]] | Member | Status| :WIP: | |
+| \[[start#Task Name|Task Name]] | Member | Status| :WIP: | |
+====Task Descriptions====
+===Task Name===
+> Task description
+>
+>**Notes**
+>  - any special notes or comments
+</nowiki>

@@ -1,0 +1,96 @@
+.taskItem {
+  box-sizing: border-box;
+  height: fit-content;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+  background-color: #30323d;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 20px;
+  padding: 5px 0px 10px 10px;
+  justify-content: space-between;
+}
+
+.taskItem input,
+.taskItem textarea {
+  background-color: transparent;
+  border: none;
+  width: 50%;
+}
+
+.taskItem input:focus {
+  outline: none;
+}
+
+.taskItem > div > div > div {
+  margin: 5px 10px;
+}
+
+.deleteTask {
+  position: absolute;
+  width: 5%;
+  top: -12px;
+  right: -8px;
+  background-color: transparent;
+  border: none;
+  color: #c84630;
+  font-size: 1.5rem;
+  transition: 0.25s;
+}
+
+.deleteTask:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: #c86c5c;
+}
+
+.taskName > input {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #e8c547;
+}
+
+.taskTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+  height: 100%;
+  color: #cdd1c4;
+}
+
+.taskTextStats {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.taskTextStats > div {
+  display: flex;
+  flex-direction: row;
+  grid-column: 1/2;
+}
+
+.taskTextStats > div:last-child {
+  grid-column: 2/3;
+}
+
+.taskTextStats strong {
+  color: #e8c547;
+}
+
+.taskDescription > textarea {
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  color: inherit;
+  width: 100%;
+  font-family: inherit;
+  resize: none;
+}
+
+.taskTextStats > div > input {
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  color: inherit;
+}
