@@ -70,7 +70,7 @@ function currentTimeDateString() {
 }
 
 async function loginDoku(username, password, wikiPage = "start") {
-  const browser = await puppeteer.launch({headless: false});
+  const browser = await puppeteer.launch({headless: true});
   const page = await browser.newPage();
   await page.goto(
     `http://ug251.eecg.utoronto.ca/wiki297s/doku.php?id=cd${teamNumber}:${wikiPage}`
